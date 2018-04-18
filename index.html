@@ -16,6 +16,13 @@
 <link href="stylesheets/site.css" rel="stylesheet" />
 </head>
 <body class='main-page'>
+<div class='preloader'>
+<div class='preloader-back'></div>
+<div class='preloader-inner'>
+<img src="images/logo.png" alt="Paytomat" width="222" height="76" />
+</div>
+</div>
+
 <header class='main-header'>
 <div class='container'>
 <div class='pull-left'>
@@ -32,7 +39,7 @@
 <a href="#payouts" class="smooth-scroll">Payouts</a>
 </li></ul>
 <div class='inline-block'>
-<a href="#" class="button red"><span>Sign Up</span>
+<a href="#" class="button red" data-popup-open="sign-up"><span>Sign Up</span>
 </a></div>
 </div>
 <a class='hamburger js-hamburger' href='#'>
@@ -66,63 +73,6 @@ Current
 </h2>
 <div class='tasks__list' id='current-tasks'>
 <div class='thead'>
-<div class='left filters-line'>
-<div class='filter--inline'>
-<div class='title'>Program:</div>
-<div class='filter community dropdown'>
-<div class='dropdown-toggle'>
-<span class='selected'>Community</span>
-<i class='icon-arrow'></i>
-</div>
-<ul class='dropdown-menu filter-options'>
-<li>All</li>
-<li>Content</li>
-<li>referral</li>
-<li>Community</li>
-</ul>
-</div>
-</div>
-<div class='filter--inline'>
-<div class='title'>State:</div>
-<div class='filter state dropdown'>
-<div class='dropdown-toggle'>
-<span class='selected'>Open</span>
-<i class='icon-arrow'></i>
-</div>
-<ul class='dropdown-menu filter-options'>
-<li>
-Open
-<i class='state-icon open'></i>
-</li>
-<li>
-In progress
-<i class='state-icon in_progress'></i>
-</li>
-<li>
-Completed
-<i class='state-icon complete'></i>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class='right filters-line'>
-<div class='filter--inline'>
-<span class='title'>Complexity:</span>
-<div class='filter complexity dropdown'>
-<div class='dropdown-toggle'>
-<span class='selected'>Difficult</span>
-<i class='icon-arrow'></i>
-</div>
-<ul class='dropdown-menu filter-options'>
-<li class='complexity-icon none'>None</li>
-<li class='complexity-icon easy'>Easy</li>
-<li class='complexity-icon medium'>Medium</li>
-<li class='complexity-icon difficult'>Difficult</li>
-</ul>
-</div>
-</div>
-</div>
 </div>
 <div class='tasks__container'>
 <div class='task__row collapse collapsed'>
@@ -133,13 +83,15 @@ Create and manage our dedicated group in WeChat in Chinese language
 </div>
 <div class='task-meta'>
 <span class='tag'>
-Content
+Community
 </span>
 <span>
 Due date:
-<em>
-recurring
-</em>
+<em>recurring</em>
+</span>
+<span>
+Participation:
+<em>1 performer</em>
 </span>
 </div>
 <div class='visible-sm flex justify-content'>
@@ -147,7 +99,7 @@ recurring
 Difficult
 </div>
 <strong class='curr'>
-400 PTI/week
+TBD
 </strong>
 </div>
 <div class='task-description'>
@@ -161,23 +113,27 @@ Difficult
 Difficult
 </div>
 <strong class='curr'>
-400 PTI/week
+TBD
 </strong>
 </div>
 </div>
 <div class='task__row collapse collapsed'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
-Create and manage our Latin American group on Facebook
+Create and manage our Spanish group on Facebook
 <span class='state-icon open'></span>
 </div>
 <div class='task-meta'>
 <span class='tag'>
-Content
+Community
 </span>
 <span>
 Due date:
 <em>recurring</em>
+</span>
+<span>
+Participation:
+<em>1 performer</em>
 </span>
 </div>
 <div class='visible-sm flex justify-content'>
@@ -185,7 +141,7 @@ Due date:
 Difficult
 </span>
 <strong class='curr'>
-400 PTI/week
+TBD
 </strong>
 </div>
 <div class='task-description'>
@@ -199,30 +155,78 @@ Difficult
 Difficult
 </div>
 <strong class='curr'>
-400 PTI/week
+TBD
 </strong>
 </div>
 </div>
 <div class='task__row collapse collapsed'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
-Generate Paytomat POS plugin installation with a Merchant
+Arrange integration with POS provider
 <span class='state-icon open'></span>
 </div>
 <div class='task-meta'>
-<span class='tag'>Business</span>
+<span class='tag'>
+Business
+</span>
 <span>
 Due date:
-<em>
-none
-</em>
+<em>none</em>
+</span>
+<span>
+Participation:
+<em>unlimited</em>
 </span>
 </div>
 <div class='visible-sm flex justify-content'>
+<span class='complexity difficult'>
+Difficult
+</span>
+<strong class='curr'>
+TBD
+</strong>
+</div>
+<div class='task-description'>
+<p>Generate bunsiness lead and manage setup meeting with a POS provider. Your reward depends on (1) effectiveness of your participation in the business setup and (2) prominence of the POS provider you helped us to engage.</p>
+<p>Completing this task will later enable you to become the member of our decentralized franchise. It might also lead to you being hired by us full time.</p>
+</div>
+<small class='hide-details collapse-toggle'>Hide details</small>
+</div>
+<div class='right hidden-sm'>
 <div class='complexity difficult'>
 Difficult
 </div>
-<strong class='curr'>500 PTI</strong>
+<strong class='curr'>
+TBD
+</strong>
+</div>
+</div>
+<div class='task__row collapse collapsed'>
+<div class='left'>
+<div class='task-title collapse-toggle'>
+Arrange Paytomat POS plugin installation with a Merchant
+<span class='state-icon open'></span>
+</div>
+<div class='task-meta'>
+<span class='tag'>
+Business
+</span>
+<span>
+Due date:
+<em>none</em>
+</span>
+<span>
+Participation:
+<em>unlimited</em>
+</span>
+</div>
+<div class='visible-sm flex justify-content'>
+<span class='complexity difficult'>
+Difficult
+</span>
+<strong class='curr'>
+TBD
+</strong>
 </div>
 <div class='task-description'>
 <p>Generate bunsiness lead and manage installation of Paytomat POS plugin with a Merchant</p>
@@ -233,7 +237,9 @@ Difficult
 <div class='complexity difficult'>
 Difficult
 </div>
-<strong class='curr'>500 PTI</strong>
+<strong class='curr'>
+TBD
+</strong>
 </div>
 </div>
 <div class='task__row collapse collapsed'>
@@ -243,118 +249,40 @@ Organize a blockchain meetup featuring Paytomat
 <span class='state-icon open'></span>
 </div>
 <div class='task-meta'>
-<span class='tag'>Business</span>
+<span class='tag'>
+Business
+</span>
 <span>
 Due date:
-<em>
-none
-</em>
+<em>none</em>
+</span>
+<span>
+Participation:
+<em>unlimited</em>
 </span>
 </div>
 <div class='visible-sm flex justify-content'>
-<div class='complexity easy'>
-Easy
-</div>
+<span class='complexity difficult'>
+Difficult
+</span>
 <strong class='curr'>
-200 PTI
+TBD
 </strong>
 </div>
 <div class='task-description'>
 <p>
 Organize a blockchain meet-up for at least 15 people in your area. One of the topics for discussion should be Paytomat payments system. Make at least 5 photos and share them on Twitter mentioning @Paytomat and providing a link to
-<a href="#">http://paytomat.com</a>
+<a href="http://paytomat.com">http://paytomat.com</a>
 </p>
 </div>
 <small class='hide-details collapse-toggle'>Hide details</small>
 </div>
 <div class='right hidden-sm'>
-<div class='complexity easy'>
-Easy
+<div class='complexity difficult'>
+Difficult
 </div>
 <strong class='curr'>
-200 PTI
-</strong>
-</div>
-</div>
-<div class='task__row collapse collapsed'>
-<div class='left'>
-<div class='task-title collapse-toggle'>
-Car sticker
-<span class='state-icon open'></span>
-</div>
-<div class='task-meta'>
-<span class='tag'>Business</span>
-<span>
-Due date:
-<em>
-none
-</em>
-</span>
-</div>
-<div class='visible-sm flex justify-content'>
-<div class='complexity easy'>
-Easy
-</div>
-<strong class='curr'>
-50 per print
-<br>
-5 per day
-</strong>
-</div>
-<div class='task-description'>
-<p>Place a sticker (25x25cm ) on the back of your car till the end of a tokensale</p>
-</div>
-<small class='hide-details collapse-toggle'>Hide details</small>
-</div>
-<div class='right hidden-sm'>
-<div class='complexity easy'>
-Easy
-</div>
-<strong class='curr'>
-50 per print
-<br>
-5 per day
-</strong>
-</div>
-</div>
-<div class='task__row collapse collapsed'>
-<div class='left'>
-<div class='task-title collapse-toggle'>
-Banner in your local shop/café
-<span class='state-icon open'></span>
-</div>
-<div class='task-meta'>
-<span class='tag'>Business</span>
-<span>
-Due date:
-<em>
-none
-</em>
-</span>
-</div>
-<div class='visible-sm flex justify-content'>
-<div class='complexity easy'>
-Easy
-</div>
-<strong class='curr'>
-100 per banner print
-<br>
-5 per day
-</strong>
-</div>
-<div class='task-description'>
-<p>Place our banner (Roll-up) in/out of your location till the end of a tokensale.</p>
-</div>
-<small class='hide-details collapse-toggle'>Hide details</small>
-</div>
-<div class='right hidden-sm'>
-<div class='complexity easy'>
-Easy
-</div>
-<strong class='curr'>
-100 per banner print
-<br>
-5 per day
+TBD
 </strong>
 </div>
 </div>
@@ -372,17 +300,27 @@ Due date:
 03/05/2018
 </em>
 </span>
+<span>
+Participation:
+<em>
+unlimited
+</em>
+</span>
 </div>
 <div class='visible-sm flex justify-content'>
 <div class='complexity difficult'>
 Difficult
 </div>
 <strong class='curr'>
-300 PTI
+TBD
 </strong>
 </div>
 <div class='task-description'>
-<p>NOTE: Your video must be at least 3 minutes long and have at least 20% views from your total subscribers Add a link https://tokensale.paytomat.com to the description of your video There is no maximum or minimum limit of your videos. We will judge them not by quantity but by the added value they create to our audience. Only English!</p>
+<p>
+NOTE: Your video must be at least 3 minutes long and have at least 20% views from your total subscribers Add a link
+<a href="https://tokensale.paytomat.com">https://tokensale.paytomat.com</a>
+to the description of your video There is no maximum or minimum limit of your videos. We will judge them not by quantity but by the added value they create to our audience. Only English!
+</p>
 </div>
 <small class='hide-details collapse-toggle'>Hide details</small>
 </div>
@@ -391,7 +329,7 @@ Difficult
 Difficult
 </div>
 <strong class='curr'>
-300 PTI
+TBD
 </strong>
 </div>
 </div>
@@ -409,13 +347,19 @@ Due date:
 none
 </em>
 </span>
+<span>
+Participation:
+<em>
+unlimited
+</em>
+</span>
 </div>
 <div class='visible-sm flex justify-content'>
 <div class='complexity easy'>
 Easy
 </div>
 <strong class='curr'>
-from 10 to 500 PTI
+TBD
 </strong>
 </div>
 <div class='task-description'>
@@ -425,7 +369,7 @@ from 10 to 500 PTI
 <p>3) Details of our project (What is the concept of or payment system, milestones, markets where we operate)</p>
 <p>
 Add a link
-<a href="#">https://tokensale.paytomat.com</a>
+<a href="https://tokensale.paytomat.com">https://tokensale.paytomat.com</a>
 to the text
 </p>
 <p>NOTE: Your text must be at least 3000 characters (withour spaces) long. There is no maximum or minimum limit of your texts. We will judge them not by quantity but by the added value they create to our audience.</p>
@@ -438,7 +382,7 @@ to the text
 Easy
 </div>
 <strong class='curr'>
-from 10 to 500 PTI
+TBD
 </strong>
 </div>
 </div>
@@ -456,19 +400,25 @@ Due date:
 none
 </em>
 </span>
+<span>
+Participation:
+<em>
+unlimited
+</em>
+</span>
 </div>
 <div class='visible-sm flex justify-content'>
 <div class='complexity easy'>
 Easy
 </div>
 <strong class='curr'>
-from 5 to 500 PTI
+TBD
 </strong>
 </div>
 <div class='task-description'>
 <p>
 Subscribe to Paytomat’s Youtube channel and upvote (like) last two videos:
-<a href="#">https://www.youtube.com/channel/UClYHITDcF3QsAtkmKzfXczQ</a>
+<a href="https://www.youtube.com/channel/UClYHITDcF3QsAtkmKzfXczQ">https://www.youtube.com/channel/UClYHITDcF3QsAtkmKzfXczQ</a>
 </p>
 <p>Make video review on our project highlighting the following topics:</p>
 <p>1) Why is it crucial to make cryptocurrency spendable (Deflate the bubble)</p>
@@ -477,7 +427,7 @@ Subscribe to Paytomat’s Youtube channel and upvote (like) last two videos:
 <p>NOTE: Your video must be at least 3 minutes long and have at least 20% views from your total subscribers</p>
 <p>
 Add a link
-<a href="#">https://tokensale.paytomat.com</a>
+<a href="https://tokensale.paytomat.com">https://tokensale.paytomat.com</a>
 to the description of your video
 </p>
 <p>There is no maximum or minimum limit of your videos. We will judge them not by quantity but by the added value they create to our audience.</p>
@@ -489,13 +439,13 @@ to the description of your video
 Easy
 </div>
 <strong class='curr'>
-from 5 to 500 PTI
+TBD
 </strong>
 </div>
 </div>
 </div>
 <div class='text-center links margin-t-large'>
-<a href="#" class="primary"><span>show all</span>
+<a href="/pages/all_tasks.html" class="primary"><span>show all</span>
 </a></div>
 </div>
 </div>
@@ -529,7 +479,7 @@ Content
 <p>Write interesting articles and blog posts or make inspiring videos about our technology and token sale and get rewarded by Paytomat</p>
 <div class='links clearfix'>
 <a href="mailto:promo@paytomat.com">Contact Us</a>
-<a href="#" class="button"><span>Current Active Tasks</span>
+<a href="#tasks" class="button smooth-scroll"><span>Current Active Tasks</span>
 </a></div>
 </div>
 </div>
@@ -545,7 +495,7 @@ Community Managers
 <p>Create and lead you local crypto community. Translate our website, white paper, blog, marketing and promo materials into your native language. Create meetups, onboard merchants, make money with Paytomat decentralized franchise</p>
 <div class='links clearfix'>
 <a href="#">Read more</a>
-<a href="#" class="button"><span>Current Active Tasks</span>
+<a href="#tasks" class="button smooth-scroll"><span>Current Active Tasks</span>
 </a></div>
 </div>
 </div>
@@ -567,9 +517,9 @@ Community Managers
 <img src="images/bp-3/img2.png" class="animate fade-in-up shadow-image" width="589" height="314" alt="Img2" />
 </div><div class='main-content__cell inline-block'>
 <div class='text-block'>
-<div class='inner'>
+<div class='innersign-up'>
 <h4>
-referral
+Referral
 <span>Programs</span>
 </h4>
 <p>Refer new community members to our token sale via your personalized link. Both: you and your referee get rewards and bonuses during the token sale</p>
@@ -732,8 +682,8 @@ Payouts
 <h3>SPEND CRYPTOCURRENCY WHEREVER YOU GO</h3>
 <p>and get rewarded with blockchain-based tokens</p>
 <div class='links clearfix'>
-<a href="#" class="button red"><span>Product site</span>
-</a><a href="#" class="button flat margin-l"><span>Buy tokens</span>
+<a href="https://paytomat.com/" class="button red"><span>Product site</span>
+</a><a href="https://tokensale.paytomat.com/" class="button flat margin-l"><span>Buy tokens</span>
 </a></div>
 </div>
 </div>
@@ -772,7 +722,144 @@ Payouts
 </div>
 </footer>
 
+<div class='popup' data-popup='sign-up' id='signUp'>
+<div class='popup-background' data-popup-close='sign-up'></div>
+<div class='popup-inner'>
+<form class='sign-up-form' id='signUpForm' method='post'>
+<div class='step-1'>
+<h1 class='text-center'>
+Sign up
+</h1>
+<h5>Step 1</h5>
+<p>You are about to become participant of Paytomat promotion program. Our program enables you to earn PTI tokens by performing tasks, which are related to our business objectives, community building and market traction.</p>
+<div class='form-group'>
+<div class='form-row'>
+<div class='line col-sm-2'>
+<div class='input'>
+<input name='email' placeholder='E-mail' required='' type='email'>
+</div>
+</div>
+<div class='line col-sm-2'>
+<div class='input'>
+<input name='nickname' placeholder='nickname' required='' type='text'>
+</div>
+</div>
+</div>
+<div class='line'>
+<div class='input'>
+<input id='password' minlength='8' name='password' placeholder='Enter password' required='' type='password'>
+</div>
+</div>
+<div class='line'>
+<div class='input'>
+<input id='password_confirm' name='password_confirm' placeholder='Re-enter password' required='' type='password'>
+</div>
+</div>
+<p>Our managers will primarily contact you via email. However, providing ID for your preferred messenger will help us to expedite the process. We use your messaging IDs only for the purposes of this bounty program.</p>
+<div class='form-group form-row'>
+<div class='input col-sm-2'>
+<input placeholder='Telegram ID' type='text'>
+</div>
+<div class='input col-sm-2'>
+<input placeholder='Facebook ID' type='text'>
+</div>
+</div>
+<footer class='clearfix'>
+<div class='pull-left'>
+<p>Already member?</p>
+<a href="" class="link red" data-popup-open="sign-in" data-popup-close="sign-up">Sign in</a>
+</div>
+<div class='pull-right'>
+<button class='button red small' id='goToStep2' type='submit'>
+<span>
+Step 2
+<i class='icon-arrow-ext'></i>
+</span>
+</button>
+</div>
+</footer>
+</div>
+</div>
+<div class='step-2'>
+<h4>
+Sign up.
+<em>Step 2</em>
+</h4>
+<p>
+Please register with
+<a href="hodl.paytomat.com" class="link red">https://hodl.paytomat.com/</a>
+to get your personalized account as a contributor of our token sale. The PTIs you will be earning by participating in our promotion program will appear there.
+</p>
+<div class='form-group'>
+<div class='line'>
+<div class='input'>
+<input placeholder='Hold ID' required='' type='text'>
+</div>
+</div>
+</div>
+<div class='form-row'>
+<div class='col-sm-1'>
+<span class='link minor' id='goToStep1'>
+<i class='icon-arrow-ext left'></i>
+Step 1
+</span>
+</div>
+<div class='col-sm-2 text-center'>
+<button class='button red margin-b-small' type='submit'>
+<span>
+Sign up
+</span>
+</button>
+<div>Already member?</div>
+<a href="" class="link red" data-popup-open="sign-in" data-popup-close="sign-up">Sign in</a>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+
+<div class='popup' data-popup='sign-in' id='signIn'>
+<div class='popup-background' data-popup-close='sign-in'></div>
+<div class='popup-inner'>
+<form class='sign-in-form' id='signInForm'>
+<h1 class='text-center'>
+Sign in
+</h1>
+<div class='form-group'>
+<div class='line'>
+<div class='input'>
+<input name='email' placeholder='E-mail' required='' type='email'>
+</div>
+</div>
+<div class='line clearfix no-margin'>
+<div class='input'>
+<input placeholder='Enter password' required='' type='password'>
+</div>
+</div>
+<div class='buttons-container text-center'>
+<button class='button red small' type='submit'>
+<span>Sign in</span>
+</button>
+<p>Don’t have account yet?</p>
+<a href="#" data-popup-open="sign-up" data-popup-close="sign-in">Sign up</a>
+</div>
+</div>
+</form>
+</div>
+</div>
+
+<div class='popup' data-popup='assign_popup' id='signUp'>
+<div class='popup-background' data-popup-close='assign_popup'></div>
+<div class='popup-inner'>
+<h1 class='text-center'>
+Assign successfully
+</h1>
+</div>
+</div>
+
 <script crossorigin='anonymous' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=' src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js'></script>
 <script src="javascripts/site.js"></script>
 </body>
 </html>

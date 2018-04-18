@@ -1,0 +1,1 @@
+$("#goToStep2").click(function(e){e.preventDefault(),$("#signUpForm").validate({rules:{password:"required",password_confirm:{equalTo:"#password"}}}),$("#signUpForm").valid()&&($(".step-1").hide(),$(".step-2").show())}),$("#goToStep1").click(function(e){e.preventDefault(),$(".step-2").hide(),$(".step-1").show()}),$("#signInForm").validate();

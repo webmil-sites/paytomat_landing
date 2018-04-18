@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".preloader").addClass("start")}),$(window).on("load",function(){$(".preloader").fadeOut(300)});

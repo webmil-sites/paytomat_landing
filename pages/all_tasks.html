@@ -60,9 +60,48 @@ All
 </h2>
 <div class='tasks__list' id='current-tasks'>
 <div class='thead'>
+<div class='left filters-line'>
+<div class='filter--inline'>
+<div class='title'>Program:</div>
+<div class='filter community dropdown'>
+<select class='js-program-select' name='program' style='width: auto;'>
+<option selected='selected' value='all'>All</option>
+<option value='content'>Content</option>
+<option value='community'>Community</option>
+<option value='business'>Business</option>
+<option value='translations'>Translations</option>
+</select>
+</div>
+</div>
+<div class='filter--inline'>
+<div class='title'>State:</div>
+<div class='filter state dropdown'>
+<select class='js-state-select' name='state' style='width: auto;'>
+<option selected='selected' value='all'>All</option>
+<option value='open'>Open</option>
+<option value='in_progress'>In progress</option>
+<option value='completed'>Completed</option>
+</select>
+</div>
+</div>
+</div>
+<div class='right filters-line'>
+<div class='filter--inline'>
+<span class='title'>Complexity:</span>
+<div class='filter comp dropdown'>
+<select class='js-comp-select' name='comp' style='width: auto;'>
+<option selected='selected' value='all'>All</option>
+<option value='easy'>Easy</option>
+<option value='medium'>Medium</option>
+<option value='difficult'>Difficult</option>
+</select>
+</div>
+</div>
+</div>
 </div>
 <div class='tasks__container'>
-<div class='task__row collapse collapsed'>
+<p class='text-center not-found js-not-found'>No tasks found. Try another options.</p>
+<div class='js-task-row task__row collapse collapsed' data-comp='difficult' data-program='community' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Create and manage our dedicated group in WeChat in Chinese language
@@ -104,7 +143,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='difficult' data-program='community' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Create and manage our Spanish group on Facebook
@@ -146,7 +185,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='difficult' data-program='community' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Create and manage our Portuguese group on Facebook
@@ -188,7 +227,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='difficult' data-program='community' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Create and manage our Korean group on Kakao Talk and Telegram
@@ -230,7 +269,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='difficult' data-program='community' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Feature Paytomat in your Telegram channel
@@ -273,7 +312,7 @@ TBD
 </div>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='difficult' data-program='community' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Participate in our Twitter bounty program
@@ -314,7 +353,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='difficult' data-program='community' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Participate in our Telegram bounty program
@@ -355,7 +394,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='difficult' data-program='community' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Feature Paytomat in your Telegram channel
@@ -396,7 +435,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='difficult' data-program='community' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Tweet about Paytomat and our token sale in the context of the current events
@@ -438,7 +477,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='difficult' data-program='community' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Tweet a hoku about Paytomat and its technology
@@ -479,7 +518,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='difficult' data-program='business' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Arrange integration with POS provider
@@ -521,7 +560,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='difficult' data-program='business' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Arrange Paytomat POS plugin installation with a Merchant
@@ -562,7 +601,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='difficult' data-program='business' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Organize a blockchain meetup featuring Paytomat
@@ -606,7 +645,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='easy' data-program='business' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Car sticker
@@ -649,7 +688,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='easy' data-program='business' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Banner in your local shop/café
@@ -692,7 +731,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='difficult' data-program='content' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Create YouTube video explainer of POS as PoS Technology
@@ -739,7 +778,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='easy' data-program='content' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Write a blog post with review of Paytomat on Medium, Steemit or other online media
@@ -792,7 +831,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='easy' data-program='content' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Create a YouTube video with a review of Paytomat
@@ -849,7 +888,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='easy' data-program='content' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Post a photo with a comment explaining or mentioning Paytomat to your preferred social network
@@ -899,7 +938,7 @@ TBD
 </div>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='easy' data-program='content' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Post a photo featuring Paytomat logo to your preferred social network
@@ -947,7 +986,7 @@ TBD
 </strong>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='easy' data-program='content' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Create a sketch or other artwork making cultural references to Paytomat, its mission, technology and/or its logo
@@ -994,7 +1033,7 @@ TBD
 </div>
 </div>
 </div>
-<div class='task__row collapse collapsed'>
+<div class='js-task-row task__row collapse collapsed' data-comp='easy' data-program='content' data-state='open'>
 <div class='left'>
 <div class='task-title collapse-toggle'>
 Post an online photo request to your favorite cafe suggesting it should use Paytomat
